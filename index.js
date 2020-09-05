@@ -1,5 +1,5 @@
 $(document).ready(function () {
- const productionSocketAddress = "ws://stupid-simple-chat.herokuapp.com";
+ const productionSocketAddress = "wss://stupid-simple-chat.herokuapp.com";
  const devSocketAddress = "ws://localhost:3000";
 
  const chatSocket = new WebSocket(productionSocketAddress);
