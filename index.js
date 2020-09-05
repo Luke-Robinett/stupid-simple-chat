@@ -1,5 +1,8 @@
 $(document).ready(function () {
- const chatSocket = new WebSocket("ws://localhost:3000");
+ const productionSocketAddress = "ws://stupid-simple-chat.herokuapp.com";
+ const devSocketAddress = "ws://localhost:3000";
+
+ const chatSocket = new WebSocket(productionSocketAddress);
 
  chatSocket.onmessage = function (event) {
   const message = JSON.parse(event.data);
