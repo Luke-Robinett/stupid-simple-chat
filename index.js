@@ -2,7 +2,7 @@ $(document).ready(function () {
  const productionSocketAddress = "wss://stupid-simple-chat.herokuapp.com";
  const devSocketAddress = "ws://localhost:3000";
 
- const chatSocket = new WebSocket(devSocketAddress);
+ const chatSocket = new WebSocket(productionSocketAddress);
 
  chatSocket.onmessage = function (event) {
   const message = JSON.parse(event.data);
@@ -17,7 +17,7 @@ $(document).ready(function () {
   $("#chat-output").append(newLi);
  };
 
- chatSocket.onclose = () => alert("Socket closing!");
+ chatSocket.onclose = () => console.log("Socket closed!");
 
  $("form").on("submit", function (event) {
   event.preventDefault();
