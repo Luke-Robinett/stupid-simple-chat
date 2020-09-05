@@ -1,0 +1,20 @@
+2020-09-05T05:11:38.370833+00:00 app[api]: Release v1 created by user lukebootcamp@gmail.com
+2020-09-05T05:11:38.370833+00:00 app[api]: Initial release by user lukebootcamp@gmail.com
+2020-09-05T05:11:38.496976+00:00 app[api]: Release v2 created by user lukebootcamp@gmail.com
+2020-09-05T05:11:38.496976+00:00 app[api]: Enable Logplex by user lukebootcamp@gmail.com
+2020-09-05T20:55:50.000000+00:00 app[api]: Build started by user lukebootcamp@gmail.com
+2020-09-05T20:56:03.973666+00:00 app[api]: Deploy 96f6144b by user lukebootcamp@gmail.com
+2020-09-05T20:56:03.973666+00:00 app[api]: Release v3 created by user lukebootcamp@gmail.com
+2020-09-05T20:56:03.990210+00:00 app[api]: Scaled to web@1:Free by user lukebootcamp@gmail.com
+2020-09-05T20:56:04.000000+00:00 app[api]: Build succeeded
+2020-09-05T20:56:06.999497+00:00 heroku[web.1]: Starting process with command `server.js`
+2020-09-05T20:56:08.982860+00:00 app[web.1]: bash: server.js: command not found
+2020-09-05T20:56:09.036517+00:00 heroku[web.1]: Process exited with status 127
+2020-09-05T20:56:09.080092+00:00 heroku[web.1]: State changed from starting to crashed
+2020-09-05T20:56:09.082346+00:00 heroku[web.1]: State changed from crashed to starting
+2020-09-05T20:56:11.762563+00:00 heroku[web.1]: Starting process with command `server.js`
+2020-09-05T20:56:14.366130+00:00 app[web.1]: bash: server.js: command not found
+2020-09-05T20:56:14.430232+00:00 heroku[web.1]: Process exited with status 127
+2020-09-05T20:56:14.487190+00:00 heroku[web.1]: State changed from starting to crashed
+2020-09-05T20:57:57.087275+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=28cf70a8-0c04-42cf-b3ee-9e229a25df03 fwd="24.20.52.64" dyno= connect= service= status=503 bytes= protocol=https
+2020-09-05T20:57:57.671383+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=8488027a-d40f-4634-a0bd-304d27e91144 fwd="24.20.52.64" dyno= connect= service= status=503 bytes= protocol=https
