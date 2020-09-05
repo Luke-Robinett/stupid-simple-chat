@@ -1,23 +1,23 @@
 const express = require("express");
 const ws = require("ws");
-const path = require("path");
 
 const PORT = process.env.PORT || 3000;
+const index = "/index.html";
+const server = express()
+.use(express.static(__dirname))
+ .use((req, res) => res.sendFile(index, { root: __dirname }))
+ .listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
 
-const app = express()
- .use(express.static(__dirname))
- .get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
-
-// Set up a headless websocket server that prints any
-// events that come in.
-const wsServer = new ws.Server({ noServer: true });
+const wsServer = new ws.Server({ server });
 
 wsServer.on("connection", socket => {
+ console.log("Client connected.");
  socket.on("message", message => {
   wsServer.clients.forEach(client => client.send(message));
  });
+ socket.on("close", () => console.log("Client disconnected."));
 });
-
+/*
 // `server` is a vanilla Node.js HTTP server, so use
 // the same ws upgrade process described here:
 // https://www.npmjs.com/package/ws#multiple-servers-sharing-a-single-https-server
@@ -27,3 +27,4 @@ server.on("upgrade", (request, socket, head) => {
   wsServer.emit("connection", socket, request);
  });
 });
+*/
