@@ -1,20 +1,100 @@
-2020-09-05T05:11:38.370833+00:00 app[api]: Release v1 created by user lukebootcamp@gmail.com
-2020-09-05T05:11:38.370833+00:00 app[api]: Initial release by user lukebootcamp@gmail.com
-2020-09-05T05:11:38.496976+00:00 app[api]: Release v2 created by user lukebootcamp@gmail.com
-2020-09-05T05:11:38.496976+00:00 app[api]: Enable Logplex by user lukebootcamp@gmail.com
-2020-09-05T20:55:50.000000+00:00 app[api]: Build started by user lukebootcamp@gmail.com
-2020-09-05T20:56:03.973666+00:00 app[api]: Deploy 96f6144b by user lukebootcamp@gmail.com
-2020-09-05T20:56:03.973666+00:00 app[api]: Release v3 created by user lukebootcamp@gmail.com
-2020-09-05T20:56:03.990210+00:00 app[api]: Scaled to web@1:Free by user lukebootcamp@gmail.com
-2020-09-05T20:56:04.000000+00:00 app[api]: Build succeeded
-2020-09-05T20:56:06.999497+00:00 heroku[web.1]: Starting process with command `server.js`
-2020-09-05T20:56:08.982860+00:00 app[web.1]: bash: server.js: command not found
-2020-09-05T20:56:09.036517+00:00 heroku[web.1]: Process exited with status 127
-2020-09-05T20:56:09.080092+00:00 heroku[web.1]: State changed from starting to crashed
-2020-09-05T20:56:09.082346+00:00 heroku[web.1]: State changed from crashed to starting
-2020-09-05T20:56:11.762563+00:00 heroku[web.1]: Starting process with command `server.js`
-2020-09-05T20:56:14.366130+00:00 app[web.1]: bash: server.js: command not found
-2020-09-05T20:56:14.430232+00:00 heroku[web.1]: Process exited with status 127
-2020-09-05T20:56:14.487190+00:00 heroku[web.1]: State changed from starting to crashed
-2020-09-05T20:57:57.087275+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=28cf70a8-0c04-42cf-b3ee-9e229a25df03 fwd="24.20.52.64" dyno= connect= service= status=503 bytes= protocol=https
-2020-09-05T20:57:57.671383+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=8488027a-d40f-4634-a0bd-304d27e91144 fwd="24.20.52.64" dyno= connect= service= status=503 bytes= protocol=https
+2020-09-05T21:59:13.806951+00:00 app[api]: Release v8 created by user lukebootcamp@gmail.com
+2020-09-05T21:59:14.000000+00:00 app[api]: Build succeeded
+2020-09-05T21:59:14.189739+00:00 heroku[web.1]: Restarting
+2020-09-05T21:59:14.193393+00:00 heroku[web.1]: State changed from up to starting
+2020-09-05T21:59:14.982593+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-09-05T21:59:15.051710+00:00 heroku[web.1]: Process exited with status 143
+2020-09-05T21:59:16.057945+00:00 heroku[web.1]: Starting process with command `node server.js`
+2020-09-05T21:59:18.161653+00:00 app[web.1]: Listening on PORT 49945
+2020-09-05T21:59:18.381027+00:00 heroku[web.1]: State changed from starting to up
+2020-09-05T21:59:51.230599+00:00 app[web.1]: Client connected.
+2020-09-05T21:59:53.395794+00:00 app[web.1]: Client disconnected.
+2020-09-05T21:59:53.395867+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=8050825e-6640-489a-8198-e46bf2ce3273 fwd="24.20.52.64" dyno=web.1 connect=1ms service=2169ms status=101 bytes=133 protocol=https
+2020-09-05T22:00:06.949204+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=cbfbb71a-4827-4f38-8308-d38effd7212b fwd="24.20.52.64" dyno=web.1 connect=0ms service=30ms status=200 bytes=1351 protocol=https
+2020-09-05T22:00:07.076935+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=6f051be6-c632-4c90-9744-b45fb90b2612 fwd="24.20.52.64" dyno=web.1 connect=0ms service=13ms status=200 bytes=682 protocol=https
+2020-09-05T22:00:07.092160+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=7dcc9788-c487-4d62-ae38-df05953ee195 fwd="24.20.52.64" dyno=web.1 connect=1ms service=13ms status=200 bytes=1525 protocol=https
+2020-09-05T22:00:07.214436+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=4e04bd1e-d1aa-4543-8a57-f0d54365a759 fwd="24.20.52.64" dyno=web.1 connect=0ms service=14ms status=200 bytes=1351 protocol=https
+2020-09-05T22:00:07.394337+00:00 app[web.1]: Client connected.
+2020-09-05T22:01:02.396840+00:00 app[web.1]: Client disconnected.
+2020-09-05T22:01:02.397210+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=a29bd9ee-9fe3-42db-a628-42226bdea890 fwd="24.20.52.64" dyno=web.1 connect=1ms service=55002ms status=503 bytes= protocol=https
+2020-09-05T22:06:16.864704+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=c2f32c32-618e-40f9-9258-ecacf04b603d fwd="24.20.52.64" dyno=web.1 connect=1ms service=7ms status=200 bytes=1351 protocol=http
+2020-09-05T22:06:17.051101+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=a5346ecd-4c35-4478-af2b-252a5635c389 fwd="24.20.52.64" dyno=web.1 connect=1ms service=23ms status=200 bytes=1525 protocol=http
+2020-09-05T22:06:17.064213+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=3fd19f3e-1550-4960-8bff-12bd5fd08893 fwd="24.20.52.64" dyno=web.1 connect=0ms service=30ms status=200 bytes=682 protocol=http
+2020-09-05T22:06:17.359061+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=8f8b7f03-3e5e-450f-80f1-ac88142e4902 fwd="24.20.52.64" dyno=web.1 connect=0ms service=3ms status=200 bytes=1351 protocol=http
+2020-09-05T22:06:17.496992+00:00 app[web.1]: Client connected.
+2020-09-05T22:07:14.927293+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=9f49a5ce-75d8-46e9-8804-e1ec0224d971 fwd="24.20.52.64" dyno=web.1 connect=1ms service=5ms status=304 bytes=237 protocol=https
+2020-09-05T22:07:25.539499+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=2263b34a-b6d8-466a-b906-08941e3c8112 fwd="24.20.52.64" dyno=web.1 connect=1ms service=9ms status=200 bytes=1351 protocol=https
+2020-09-05T22:07:25.664255+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=71c5ab44-fd7e-4c36-83ea-d0d38d05fc3a fwd="24.20.52.64" dyno=web.1 connect=1ms service=4ms status=200 bytes=682 protocol=https
+2020-09-05T22:07:25.727278+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=89a1313f-9386-4cd7-8dd0-14b590d1b1ff fwd="24.20.52.64" dyno=web.1 connect=1ms service=6ms status=200 bytes=1525 protocol=https
+2020-09-05T22:07:25.867022+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=d3aee5f8-0295-419f-aadd-05b46f074f93 fwd="24.20.52.64" dyno=web.1 connect=6ms service=7ms status=200 bytes=1351 protocol=https
+2020-09-05T22:07:26.045206+00:00 app[web.1]: Client connected.
+2020-09-05T22:09:13.620261+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=116e3918-e14d-488a-8782-27588e9c9be2 fwd="24.20.52.64" dyno=web.1 connect=0ms service=176124ms status=503 bytes= protocol=https
+2020-09-05T22:09:13.620733+00:00 app[web.1]: Client disconnected.
+2020-09-05T22:09:13.624022+00:00 app[web.1]: Client disconnected.
+2020-09-05T22:09:13.633026+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=4d9432f8-e154-4640-b2cd-717c3499ab82 fwd="24.20.52.64" dyno=web.1 connect=0ms service=107588ms status=503 bytes= protocol=https
+2020-09-05T22:41:36.626658+00:00 heroku[web.1]: Idling
+2020-09-05T22:41:36.628638+00:00 heroku[web.1]: State changed from up to down
+2020-09-05T22:41:40.248245+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-09-05T22:41:40.362904+00:00 heroku[web.1]: Process exited with status 143
+2020-09-06T03:25:43.352562+00:00 heroku[web.1]: Unidling
+2020-09-06T03:25:43.368080+00:00 heroku[web.1]: State changed from down to starting
+2020-09-06T03:25:45.335951+00:00 heroku[web.1]: Starting process with command `node server.js`
+2020-09-06T03:25:48.088503+00:00 app[web.1]: Listening on PORT 24995
+2020-09-06T03:25:49.651666+00:00 heroku[web.1]: State changed from starting to up
+2020-09-06T03:25:50.428820+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=3e32d4ad-5b7a-47a0-90e4-4011fa35bdac fwd="24.20.52.64" dyno=web.1 connect=0ms service=19ms status=200 bytes=1351 protocol=https
+2020-09-06T03:25:50.567115+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=bbff0c5f-c726-4b55-80a2-6d674172ae7d fwd="24.20.52.64" dyno=web.1 connect=0ms service=7ms status=200 bytes=682 protocol=https
+2020-09-06T03:25:50.575251+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=7565f49e-0383-468a-860c-0674bf4bc0ee fwd="24.20.52.64" dyno=web.1 connect=0ms service=2ms status=200 bytes=1525 protocol=https
+2020-09-06T03:25:50.969820+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=2e158ee2-0460-4a17-a455-48ee9e1a94bf fwd="24.20.52.64" dyno=web.1 connect=0ms service=4ms status=200 bytes=1351 protocol=https
+2020-09-06T03:25:51.138988+00:00 app[web.1]: Client connected.
+2020-09-06T03:27:02.084133+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=339e5520-367e-4678-8a5f-305b96f2bdcb fwd="24.20.52.64" dyno=web.1 connect=1ms service=70946ms status=503 bytes= protocol=https
+2020-09-06T03:27:02.084337+00:00 app[web.1]: Client disconnected.
+2020-09-06T03:57:10.834594+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=22638c3c-4c57-4aab-b23a-0a74390b099d fwd="67.171.206.191" dyno=web.1 connect=0ms service=4ms status=200 bytes=1351 protocol=https
+2020-09-06T03:57:10.958753+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=6a4dad27-3b6a-413f-98cf-31e5569cce5a fwd="67.171.206.191" dyno=web.1 connect=0ms service=5ms status=200 bytes=682 protocol=https
+2020-09-06T03:57:11.162081+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=85c25760-9a90-43db-9424-ce3081d316b2 fwd="67.171.206.191" dyno=web.1 connect=1ms service=3ms status=200 bytes=1525 protocol=https
+2020-09-06T03:57:11.623450+00:00 app[web.1]: Client connected.
+2020-09-06T03:57:11.682097+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=a364b60f-e6cb-4298-b748-97e586fdcd3c fwd="67.171.206.191" dyno=web.1 connect=0ms service=8ms status=200 bytes=1351 protocol=https
+2020-09-06T03:58:22.832535+00:00 app[web.1]: Client disconnected.
+2020-09-06T03:58:22.832615+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=b96c4d00-d5fa-432b-a349-58c9bc78440b fwd="67.171.206.191" dyno=web.1 connect=0ms service=71210ms status=503 bytes= protocol=https
+2020-09-06T04:10:32.400127+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=a54b2599-b9ef-4b67-ba06-924986d298e9 fwd="67.171.206.191" dyno=web.1 connect=0ms service=11ms status=200 bytes=1351 protocol=https
+2020-09-06T04:10:32.538197+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=84d72db1-443f-4078-b82c-d9aeaa338435 fwd="67.171.206.191" dyno=web.1 connect=2ms service=4ms status=200 bytes=682 protocol=https
+2020-09-06T04:10:32.822379+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=4bce3205-78da-4f8c-aeaa-748c3d4aa042 fwd="67.171.206.191" dyno=web.1 connect=0ms service=3ms status=200 bytes=1525 protocol=https
+2020-09-06T04:10:33.252273+00:00 app[web.1]: Client connected.
+2020-09-06T04:10:36.372686+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=2a9cc9c6-2040-4e53-923c-a88501a708b0 fwd="67.171.206.191" dyno=web.1 connect=0ms service=4ms status=200 bytes=1351 protocol=https
+2020-09-06T04:10:36.560857+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=a505ee97-0e2e-49c8-9010-fe6d3c2d1b66 fwd="67.171.206.191" dyno=web.1 connect=0ms service=3310ms status=101 bytes=129 protocol=https
+2020-09-06T04:10:36.561349+00:00 app[web.1]: Client disconnected.
+2020-09-06T04:10:36.579935+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=b3260601-70f3-42a8-acdf-12a228d6bf87 fwd="67.171.206.191" dyno=web.1 connect=0ms service=11ms status=304 bytes=237 protocol=https
+2020-09-06T04:10:36.587719+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=2a69b18b-aafa-4627-b987-21c0b9d73f52 fwd="67.171.206.191" dyno=web.1 connect=0ms service=13ms status=304 bytes=237 protocol=https
+2020-09-06T04:10:36.902207+00:00 app[web.1]: Client connected.
+2020-09-06T04:10:39.129666+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=c00039d0-f34b-4167-bd74-5460e0c52d70 fwd="67.171.206.191" dyno=web.1 connect=1ms service=9ms status=200 bytes=1351 protocol=https
+2020-09-06T04:10:42.219091+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=7c5e032c-8f09-4b2c-a2db-af720845f88b fwd="67.171.206.191" dyno=web.1 connect=1ms service=5318ms status=101 bytes=129 protocol=https
+2020-09-06T04:10:42.219945+00:00 app[web.1]: Client disconnected.
+2020-09-06T04:44:34.380315+00:00 heroku[web.1]: Idling
+2020-09-06T04:44:34.386064+00:00 heroku[web.1]: State changed from up to down
+2020-09-06T04:44:35.490326+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-09-06T04:44:35.622867+00:00 heroku[web.1]: Process exited with status 143
+2020-09-06T05:38:38.370776+00:00 heroku[web.1]: Unidling
+2020-09-06T05:38:38.373159+00:00 heroku[web.1]: State changed from down to starting
+2020-09-06T05:38:40.211790+00:00 heroku[web.1]: Starting process with command `node server.js`
+2020-09-06T05:38:42.342627+00:00 app[web.1]: Listening on PORT 28109
+2020-09-06T05:38:42.879503+00:00 heroku[web.1]: State changed from starting to up
+2020-09-06T05:38:44.437430+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=31ba7308-980e-481b-8cf5-a39579b4224d fwd="24.20.52.64" dyno=web.1 connect=1ms service=20ms status=200 bytes=1351 protocol=https
+2020-09-06T05:38:44.582543+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=de721c57-45be-4d61-871e-e7a0d09da88c fwd="24.20.52.64" dyno=web.1 connect=1ms service=5ms status=200 bytes=1525 protocol=https
+2020-09-06T05:38:44.586523+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=63409449-9b5b-4860-9f8d-a1064aa4e00d fwd="24.20.52.64" dyno=web.1 connect=1ms service=6ms status=200 bytes=682 protocol=https
+2020-09-06T05:38:44.989279+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=b03ccdfc-6cb8-4d76-ab6b-e1f49536b1f5 fwd="24.20.52.64" dyno=web.1 connect=1ms service=4ms status=200 bytes=1351 protocol=https
+2020-09-06T05:38:45.176740+00:00 app[web.1]: Client connected.
+2020-09-06T05:39:34.603057+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=a86cc52f-be42-4930-b469-9097e852dfa1 fwd="24.20.52.64" dyno=web.1 connect=0ms service=4ms status=200 bytes=1351 protocol=https
+2020-09-06T05:39:34.716587+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=5dbe7f1d-dbb6-4de9-a669-e4e39255eca2 fwd="24.20.52.64" dyno=web.1 connect=0ms service=3ms status=200 bytes=682 protocol=https
+2020-09-06T05:39:34.927307+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=42b546ee-4f2c-4c29-bf71-2c936372a731 fwd="24.20.52.64" dyno=web.1 connect=1ms service=6ms status=200 bytes=1525 protocol=https
+2020-09-06T05:39:35.647752+00:00 app[web.1]: Client connected.
+2020-09-06T05:39:36.101368+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=4b87ae40-1095-42e3-b947-fabce0a3a56f fwd="24.20.52.64" dyno=web.1 connect=1ms service=4ms status=200 bytes=1351 protocol=https
+2020-09-06T05:39:40.176803+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=a42a614c-9249-4cf8-bf1b-9625f241b7f7 fwd="24.20.52.64" dyno=web.1 connect=1ms service=55003ms status=503 bytes= protocol=https
+2020-09-06T05:39:40.178928+00:00 app[web.1]: Client disconnected.
+2020-09-06T05:39:59.708383+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=29a7b97a-886c-44d1-8578-f2e76ae715b3 fwd="24.20.52.64" dyno=web.1 connect=1ms service=3ms status=200 bytes=1351 protocol=https
+2020-09-06T05:39:59.843047+00:00 heroku[router]: at=info method=GET path="/index.js" host=stupid-simple-chat.herokuapp.com request_id=f9a16520-bf29-45d7-be3d-b3999839b9fa fwd="24.20.52.64" dyno=web.1 connect=1ms service=5ms status=200 bytes=1525 protocol=https
+2020-09-06T05:39:59.845377+00:00 heroku[router]: at=info method=GET path="/style.css" host=stupid-simple-chat.herokuapp.com request_id=18398e3f-a605-454c-a1b9-90ade991a7be fwd="24.20.52.64" dyno=web.1 connect=1ms service=4ms status=200 bytes=682 protocol=https
+2020-09-06T05:40:00.258868+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=stupid-simple-chat.herokuapp.com request_id=fb0a23f7-8cc4-42f8-86ed-55eebb1c3c47 fwd="24.20.52.64" dyno=web.1 connect=1ms service=3ms status=200 bytes=1351 protocol=https
+2020-09-06T05:40:00.443296+00:00 app[web.1]: Client connected.
+2020-09-06T05:40:47.954006+00:00 app[web.1]: Client disconnected.
+2020-09-06T05:40:47.956935+00:00 heroku[router]: at=info method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=5a645376-8e70-4342-b540-5c8ba73fb9c3 fwd="24.20.52.64" dyno=web.1 connect=1ms service=72306ms status=101 bytes=492 protocol=https
+2020-09-06T05:41:35.110097+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/" host=stupid-simple-chat.herokuapp.com request_id=93d8e63b-2b00-4a18-9a55-c921e26bac25 fwd="24.20.52.64" dyno=web.1 connect=1ms service=94669ms status=503 bytes= protocol=https
+2020-09-06T05:41:35.112327+00:00 app[web.1]: Client disconnected.

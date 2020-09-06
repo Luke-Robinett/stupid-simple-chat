@@ -2,19 +2,22 @@ $(document).ready(function () {
  const productionSocketAddress = "wss://stupid-simple-chat.herokuapp.com";
  const devSocketAddress = "ws://localhost:3000";
 
- const chatSocket = new WebSocket(productionSocketAddress);
+ const chatSocket = new WebSocket(devSocketAddress);
 
  chatSocket.onmessage = function (event) {
-  const message = JSON.parse(event.data);
-  const time = new Date();
-  const hours = time.getHours();
-  const minutes = time.getMinutes();
-  const timeStamp = `[${hours}:${minutes}]`;
-  const messageText = `${timeStamp} ${message.username}: ${message.message}`;
-  const newLi = $("<li tabindex='0' style='list-style-type: none;'>");
-
-  newLi.text(messageText);
-  $("#chat-output").append(newLi);
+  const data = JSON.parse(event.data);
+  switch (data.type) {
+   case "message":
+    const messageText = `${data.username}: ${data.message}`;
+    const newLi = $("<li tabindex='0' style='list-style-type: none;'>");
+    newLi.text(messageText);
+    $("#chat-output").append(newLi);
+    break;
+   case "system":
+    break;
+   default:
+    break;
+  }
  };
 
  chatSocket.onclose = () => console.log("Socket closed!");
@@ -23,6 +26,7 @@ $(document).ready(function () {
   event.preventDefault();
 
   chatSocket.send(JSON.stringify({
+   type: "message",
    username: $("#username").val(),
    message: $("#chat-input").val()
   }));
